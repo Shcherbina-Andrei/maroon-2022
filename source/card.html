@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Товар</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <a class="main-nav__logo">
+          <img class="main-logo__image" src="" width="" height="">
+        </a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">О нас</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link"></a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="card">
+        <h1 class="visually-hidden">Карточка товара</h1>
+        <form class="card__form" action="#">
+          <div class="card__img-wrapper">
+
+          </div>
+          <div class="card__info-wrapper">
+            <h2 class="card__title">Rose</h2>
+            <span class="card__type">крем для лица</span>
+            <p class="card__description">
+              Увлажняющий крем идеально подходит для повседневного ухода
+              за молодой кожей.
+              Крем равномерно распределяется
+              по поверхности благодаря легкой текстуре, обеспечивает
+              глубокое увлажнение, регенерацию клеток.
+            </p>
+            <div class="card__details">
+              <div class="card__details-wrapper">
+                <h3 class="card__subtitle">Состав</h3>
+                <button class="card__details-button"></button>
+                <p class="card__details-info">
+                  Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch,
+                  Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene
+                  Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
+                </p>
+              </div>
+
+              <div class="card__details-wrapperr">
+                <h3 class="card__subtitle">Способ применения</h3>
+                <button class="card__details-button"></button>
+                <p class="card__details-info">
+                  Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями,
+                  избегая области вокруг глаз. Подходит для дневногои ночного ухода.
+                </p>
+              </div>
+            </div>
+
+            <fieldset class="card__volume ">
+              <legend class="card__subtitle">Объем</legend>
+              <ul class="card__filter-list">
+                <li class="card__filter-item">
+                  <label class="card__filter-control">
+                    <input class="card__filter-input" type="radio" value="50ml" checked>
+                    <span class="card__filter-mark"></span>>
+                    <span class="card__filter-label">50ml</span>
+                  </label>
+                </li>
+
+                <li class="card__filter-item">
+                  <label class="card__filter-control">
+                    <input class="card__filter-input" type="radio" value="30ml" checked>
+                    <span class="card__filter-mark"></span>>
+                    <span class="card__filter-label">30ml</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </form>
+      </section>
+
+      <section class="recent-products">
+        <h2 class="recent-products__title">Вы недавно смотрели</h2>
+        <div class="recent-products__slider slider">
+          <ul class="recent-products__list products-list">
+            <li class="products-list__item">
+              <a class="products-list__link" href="#">
+                <img class="products-list__img" src="" width="" height="" alt="">
+                <h3 class="products-list__title">Clean</h3>
+                <span class="products-list__price">490</span>
+                <span class="products-list__type">маска для лица</span>
+                <span class="products-list__volume">100g</span>
+              </a>
+            </li>
+
+            <li class="products-list__item">
+              <a class="products-list__link" href="#">
+                <img class="products-list__img" src="" width="" height="" alt="">
+                <h3 class="products-list__title">Lotos</h3>
+                <span class="products-list__price">890</span>
+                <span class="products-list__type">маска для лица</span>
+                <span class="products-list__volume">50ml</span>
+              </a>
+            </li>
+
+            <li class="products-list__item">
+              <a class="products-list__link" href="#">
+                <img class="products-list__img" src="" width="" height="" alt="">
+                <h3 class="products-list__title">Lavender</h3>
+                <span class="products-list__price">290</span>
+                <span class="products-list__type">мыло ручной работы</span>
+                <span class="products-list__volume">50g</span>
+              </a>
+            </li>
+
+            <li class="products-list__item">
+              <a class="products-list__link" href="#">
+                <img class="products-list__img" src="" width="" height="" alt="">
+                <h3 class="products-list__title">Coconut</h3>
+                <span class="products-list__price">990</span>
+                <span class="products-list__type">масло для тела</span>
+                <span class="products-list__volume">300ml</span>
+              </a>
+            </li>
+          </ul>
+          <div class="slider__pagination pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li><li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+            </ul>
+          </div>
+          <div class="slider__buttons-wrapper">
+            <button class="slider__button slider__button--prev" type="button"></button>
+            <button class="slider__button slider__button--next" type="button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__nav">
+          <a class="footer__logo">
+            <img class="footer-logo__img" src="" width="" height="" alt="">
+          </a>
+          <ul class="site-list site-list--footer">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Каталог</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О нас</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Контакты</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

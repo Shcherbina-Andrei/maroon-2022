@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maroon - магазин косметики</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="header main-header">
+      <nav class="header__nav main-nav">
+        <a class="main-nav__logo" href="#">
+          <svg class="main-nav__logo-image" width="131" height="21">
+            <use href="img/sprite.svg#logo"></use>
+          </svg>
+          <span class="visually-hidden">Логотип</span>
+        </a>
+        <ul class="main-nav__list main-nav__list--site site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">О нас</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="16" height="21">
+                <use href="img/sprite.svg#icon-log-in"></use>
+              </svg>
+              <span class="visually-hidden">Вход в личный кабинет</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="18" height="21">
+                <use href="img/sprite.svg#icon-basket"></use>
+              </svg>
+              <span class="visually-hidden">Кабинет</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <seciton class="main-header__intro intro-promo">
+        <div class="intro-promo__wrapper">
+          <div class="intro-promo__maroon-info">
+            <h1 class="intro-promo__title">Maroon</h1>
+            <p class="intro-promo__slogan">
+              Натуральная косметика<br>
+              для бережного ухода за кожей
+            </p>
+            <a class="intro-promo__details-link button" href="#">Подробнее</a>
+          </div>
+          <div class="intro-promo__catalog-direction intro-promo__catalog-direction--face-care">
+            <a class="intro-promo__link" href="#">
+              <img class="intro-promo__img" src="img/face-care.jpg" width="330" height="442" alt="Средства для лица">
+              <div class="intro-promo__link-wrapper">
+                <span class="intro-promo__label">Уход для лица</span>
+                <svg class="intro-promo__arrow-icon" width="26" height="12">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="intro-promo__catalog-direction intro-promo__catalog-direction--body-care">
+            <a class="intro-promo__link" href="#">
+              <img class="intro-promo__img" src="img/body-care.jpg" width="330" height="442" alt="Средства для тела">
+              <div class="intro-promo__link-wrapper">
+                <span class="intro-promo__label">Уход для тела</span>
+                <svg class="intro-promo__arrow-icon" width="26" height="12">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </seciton>
+    </header>
+    <main class="main-container">
+      <section class="bestsellers">
+        <div class="bestsellers__wrapper">
+          <div class="bestsellers__info">
+            <h2 class="bestsellers__title">Бестселлеры</h2>
+            <p class="bestsellers__text-info">
+              Легендарные продукты,<br>
+              завоевавшие любовь<br>
+              наших клиентов
+            </p>
+            <a class="bestsellers__link-all button">Смотреть все</a>
+          </div>
+          <div class="bestsellers__slider slider">
+            <ul class="bestsellers__list slider__list">
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img class="slider__img" src="img/slider/slider-high.jpg" width="230" height="312" alt="Крем High">
+                  <div class="slider__inner-wrapper">
+                    <h3 class="slider__title">High</h3>
+                    <p class="slider__description">крем для лица</p>
+                    <span class="slider__more-info" href="#">Подробнее</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img class="slider__img" src="img/slider/slider-rest.jpg" width="230" height="312" alt="Пудра Rest">
+                  <div class="slider__inner-wrapper">
+                    <h3 class="slider__title">Rest</h3>
+                    <p class="slider__description">минеральная пудра</p>
+                    <span class="slider__more-info" href="#">Подробнее</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img class="slider__img" src="img/slider/slider-rose.jpg" width="230" height="312" alt="Крем Rose">
+                  <div class="slider__inner-wrapper">
+                    <h3 class="slider__title">Rose</h3>
+                    <p class="slider__description">крем для лица</p>
+                    <span class="slider__more-info" href="#">Подробнее</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img class="slider__img" src="img/slider/slider-milk.jpg" width="230" height="312" alt="Крем Milk">
+                  <div class="slider__inner-wrapper">
+                    <h3 class="slider__title">Milk</h3>
+                    <p class="slider__description">масло для тела</p>
+                    <span class="slider__more-info" href="#">Подробнее</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="slider__item">
+                <a class="slider__link" href="#">
+                  <img class="slider__img" src="img/slider/slider-lotos.jpg" width="230" height="312" alt="Маска Lotos">
+                  <div class="slider__inner-wrapper">
+                    <h3 class="slider__title">Lotos</h3>
+                    <p class="slider__description">маска для лица</p>
+                    <span class="slider__more-info" href="#">Подробнее</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="slider__buttons-wrapper">
+              <button class="slider__button slider__button--prev" type="button">
+                <svg class="slider__arrow-icon" width="26" height="12">
+                  <use href="img/sprite.svg#slider-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="slider__button slider__button--next" type="button">
+                <svg class="slider__arrow-icon" width="26" height="12">
+                  <use href="img/sprite.svg#slider-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-spring">
+        <div class="promo-spring__wrapper">
+          <h2 class="promo-spring__title">Встречайте весну вместе с нами</h2>
+          <p class="promo-spring__slogan">
+            Попробуйте новую коллекцию ухаживающих средств для лица с SPF защитой
+          </p>
+          <a class="promo-spring__link button">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="self-care">
+        <div class="self-care__wrapper">
+          <div class="self-care__text-wrapper">
+            <h2 class="self-care__title">Индивидуальный уход</h2>
+            <p class="self-care__recommendation">
+              Не всегда очевидно, какие элементы и минералы необходимы коже,
+              а многочисленные эксперименты
+              с разными средствами только ухудшают ее качество.
+              Заполните анкету, и мы подберем уход, подходящий именно вам,
+              учитывая ваш образ жизни, место жительства и другие факторы.
+            </p>
+            <a class="self-care__link button">Заполнить анкету</a>
+          </div>
+          <div class="self-care__img-wrapper">
+            <img class="self-care__img" width="" height="" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="maroon-history">
+        <h2 class="visually-hidden">История магазина Maroon</h2>
+        <p class="maroon-history__slogan">
+          “Мы стремимся сделать уход за кожей доступным
+          и приятным ритуалом для всех, кто хочет
+          заботиться о себе и своем теле”
+        </p>
+        <a class="maroon-history__link button">Наша история</a>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter__img-wrapper">
+
+        </div>
+        <div class="newsletter__text-wrapper">
+          <h2 class="newsletter__title">Присоединяйтесь к нам</h2>
+          <p class="newsletter__subscribe-info">
+            Подпишитесь на наш аккаунт @marooncare
+            и узнавайте о новиках и акциях первыми
+          </p>
+          <a class="newsletter__link button">Подписаться</a>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__text-wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="contacts__information">
+              <h3 class="contacts__subtitle">Адрес</h3>
+              <p class="contacts__text">
+                Санкт-Петербург,
+                ул. Большая Конюшенная, 19
+              </p>
+              <h3 class="contacts__subtitle">Телефон</h3>
+              <a class="contacts__phone" href="tel:89238889060">+7 (923) 888-90-60</a>
+              <a class="contacts__email" href="mailto:info@maroon.ru">info@maroon.ru</a>
+              <ul class="contacts__social social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="">
+
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="">
+
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="">
+
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="contacts__map map">
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__nav">
+          <a class="footer__logo">
+            <img class="footer-logo__img" src="" width="" height="" alt="">
+          </a>
+          <ul class="site-list site-list--footer">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Каталог</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О нас</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Контакты</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

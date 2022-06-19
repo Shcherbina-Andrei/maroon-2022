@@ -1,0 +1,80 @@
+@import "../base/variables.scss";
+
+.intro-promo__wrapper {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.intro-promo__maroon-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  order: 2;
+}
+
+.intro-promo__catalog-direction--face-care {
+  order: 1;
+}
+
+.intro-promo__catalog-direction--body-care {
+  order: 3;
+}
+
+.intro-promo__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 68px;
+  text-transform: uppercase;
+}
+
+.intro-promo__slogan {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.intro-promo__img {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.intro-promo__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: $font-primary-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.intro-promo__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-promo__label {
+  display: block;
+}
+
+
+.intro-promo__arrow-icon {
+  stroke: $font-primary-color;
+}
