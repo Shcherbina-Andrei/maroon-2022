@@ -1,0 +1,38 @@
+@import "../base/variables.scss";
+
+.bestsellers {
+  margin-bottom: 146px;
+}
+
+.bestsellers__wrapper {
+  display: flex;
+  width: auto;
+  margin-left: 98px;
+}
+
+.bestsellers__info {
+  flex-shrink: 0;
+  width: 214px;
+  padding-top: 46px;
+  margin-right: 86px;
+}
+
+.bestsellers__slider {
+  flex-grow: 1;
+}
+
+.bestsellers__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.bestsellers__text-info {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 26px;
+}

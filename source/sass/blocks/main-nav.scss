@@ -1,0 +1,42 @@
+@import "../base/variables.scss";
+
+.main-nav {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+
+.main-nav__logo {
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main-nav__logo-image {
+  display: block;
+  fill: $font-primary-color;
+}
+
+.main-nav__logo:hover .main-nav__logo-image {
+  fill: rgba(18, 41, 71, 0.6);
+}
+
+.main-nav__logo:active .main-nav__logo-image {
+  fill: rgba(18, 41, 71, 0.3);
+}
+
+.main-nav__list {
+  margin: 0;
+  color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-nav__list--site {
+  margin: 0;
+  margin-right: 50px;
+}
