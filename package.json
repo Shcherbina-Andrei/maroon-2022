@@ -1,0 +1,22 @@
+{
+  "name": "maroon-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shcherbina-Andrei/maroon-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shcherbina-Andrei/maroon-2022/issues"
+  },
+  "homepage": "https://github.com/Shcherbina-Andrei/maroon-2022#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
