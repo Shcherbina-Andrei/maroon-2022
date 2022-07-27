@@ -1,0 +1,27 @@
+@import "../base/variables.scss";
+
+.social-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.social-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social-list__icon {
+  display: block;
+  fill: $font-primary-color;
+}
+
+.social-list__link:hover .social-list__icon {
+  fill: rgba(18, 41, 71, 0.6);
+}
+
+.social-list__link:active .social-list__icon {
+  fill: rgba(18, 41, 71, 0.3);
+}

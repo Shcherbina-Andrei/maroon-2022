@@ -1,0 +1,19 @@
+@import "../base/variables.scss";
+
+.logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.logo__image {
+  display: block;
+  fill: $font-primary-color;
+}
+
+.logo:hover .logo__image {
+  fill: rgba(18, 41, 71, 0.6);
+}
+
+.logo:active .logo__image {
+  fill: rgba(18, 41, 71, 0.3);
+}

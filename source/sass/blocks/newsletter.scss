@@ -1,0 +1,45 @@
+@import "../base/variables.scss";
+
+.newsletter {
+  width: 1366px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+
+.newsletter__wrapper {
+  display: flex;
+  width: 1151px;
+  margin-left: 98px;
+}
+
+.newsletter__images-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 699px;
+  margin-right: 70px;
+}
+
+
+.newsletter__image {
+  display: block;
+}
+
+.newsletter__text-wrapper {
+  padding-top: 146px;
+}
+
+.newsletter__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.newsletter__subscribe-info {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 26px;
+}

@@ -38,9 +38,9 @@ export const styles = () => {
   // Scripts
 
   const scripts = () => {
-  return gulp.src('source/js/script.js')
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
   .pipe(gulp.dest('build/js'))
-  .pipe(browser.stream());
   }
 
   // Images
@@ -133,7 +133,7 @@ export const styles = () => {
   styles,
   html,
   svg,
-
+  scripts,
   createWebp
   ),
   );
@@ -148,6 +148,7 @@ export const styles = () => {
   styles,
   html,
   svg,
+  scripts,
   createWebp
   ),
   gulp.series(
