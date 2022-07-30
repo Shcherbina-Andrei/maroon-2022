@@ -2,10 +2,21 @@
 
 .intro-promo__wrapper {
   display: flex;
+  position: relative;
   box-sizing: border-box;
   justify-content: space-between;
   width: 1030px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 88%;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: static;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 .intro-promo__maroon-info {
@@ -14,14 +25,48 @@
   align-items: center;
   padding-top: 60px;
   order: 2;
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    padding-top: 0;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: $mobile-width) {
+    position: static;
+    transform: none;
+    margin-bottom: 35px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .intro-promo__catalog-direction--face-care {
   order: 1;
+
+  @media (max-width: $mobile-width) {
+    width: 130px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 .intro-promo__catalog-direction--body-care {
   order: 3;
+
+  @media (max-width: $mobile-width) {
+    width: 130px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .intro-promo__title {
@@ -33,6 +78,17 @@
   font-size: 58px;
   line-height: 68px;
   text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 63px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 50px;
+  }
 }
 
 .intro-promo__slogan {
@@ -41,11 +97,26 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .intro-promo__img {
   display: block;
   margin-bottom: 15px;
+
+  @media (max-width: $tablet-width) {
+    width: 245px;
+    height: 322px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 170px;
+  }
 }
 
 .intro-promo__link {
@@ -61,6 +132,12 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 130px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 

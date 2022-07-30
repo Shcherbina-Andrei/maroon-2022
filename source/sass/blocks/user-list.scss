@@ -21,6 +21,10 @@
 
 .user-list__icon {
   fill: #122947;
+
+  @media (max-width: $mobile-width) {
+    height: 16px;
+  }
 }
 
 .user-list__link:hover .user-list__icon {

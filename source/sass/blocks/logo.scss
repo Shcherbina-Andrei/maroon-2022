@@ -8,6 +8,11 @@
 .logo__image {
   display: block;
   fill: $font-primary-color;
+
+  @media (max-width: $mobile-width) {
+    width: 85px;
+    height: 13px;
+  }
 }
 
 .logo:hover .logo__image {
