@@ -17,6 +17,7 @@
     justify-items: space-between;
     align-items: center;
     width: 88%;
+    margin-bottom: 30px;
   }
 }
 
@@ -62,6 +63,10 @@
       right: 0;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .main-nav__social-wrapper {
@@ -90,11 +95,21 @@
     margin-right: 0;
     font-family: "Raleway", "Arial", sans-serif;
     font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+
+    .site-list__item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
     font-size: 28px;
     line-height: 36px;
 
     .site-list__item:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
   }
 }

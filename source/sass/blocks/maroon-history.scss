@@ -2,6 +2,14 @@
 
 .maroon-history {
   margin-bottom: 140px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .maroon-history__wrapper {
@@ -11,6 +19,15 @@
   padding: 120px 210px;
   text-align: center;
   background-image: url("../img/maroon-history-background.jpg");
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 100px 58px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 60px 39px;
+  }
 }
 
 .maroon-history__slogan {
@@ -20,4 +37,8 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 42px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+  }
 }

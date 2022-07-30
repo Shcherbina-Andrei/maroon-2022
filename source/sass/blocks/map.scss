@@ -1,0 +1,12 @@
+@import "../base/variables.scss";
+
+.map iframe {
+  @media (max-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    height: 281px;
+  }
+}
