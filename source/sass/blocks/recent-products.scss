@@ -1,0 +1,34 @@
+@import "../base/variables.scss";
+
+.recent-products {
+  margin-bottom: 140px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 80px;
+  }
+}
+
+
+.recent-products__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 88%;
+  }
+}
+
+
+.recent-products__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
