@@ -1,5 +1,3 @@
-import './slider.js';
-
 const menuButton = document.querySelector('.main-nav__toggle');
 const menuSite = document.querySelector('.main-nav__inner-wrapper');
 

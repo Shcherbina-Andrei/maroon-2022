@@ -1,0 +1,49 @@
+@import "../base/variables.scss";
+
+.pagination__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.pagination__item--more {
+  width: 50px;
+}
+
+.pagination__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.pagination__link--more {
+  display: block;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $font-primary-color;
+  }
+}
