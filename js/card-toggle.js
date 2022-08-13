@@ -1,0 +1,1 @@
+const cardToggleButtonElements=document.querySelectorAll(".card__subtitle");cardToggleButtonElements.forEach((e=>{e.addEventListener("click",(t=>{t.preventDefault(),e.classList.toggle("card__subtitle--closed"),e.classList.toggle("card__subtitle--opened")}))}));

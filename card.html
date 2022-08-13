@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Товар</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="header header--add-page">
+      <nav class="header__nav main-nav main-nav--add-page">
+        <a class="main-nav__logo logo" href="index.html">
+          <svg class="logo__image" width="131" height="21">
+            <use href="img/sprite.svg#logo"></use>
+          </svg>
+          <span class="visually-hidden">Логотип</span>
+        </a>
+        <div class="main-nav__inner-wrapper main-nav__inner-wrapper--closed">
+          <div class="main-nav__inner-mobile-wrapper">
+            <ul class="main-nav__list main-nav__list--site site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">О нас</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="main-nav__social-wrapper">
+              <ul class="main-nav__social-list social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <svg class="social-list__icon" width="11" height="18">
+                      <use href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <svg class="social-list__icon" width="20" height="20">
+                      <use href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <svg class="social-list__icon" width="20" height="17">
+                      <use href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list main-nav__list--user user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="16" height="21">
+                <use href="img/sprite.svg#icon-log-in"></use>
+              </svg>
+              <span class="visually-hidden">Вход в личный кабинет</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="18" height="21">
+                <use href="img/sprite.svg#icon-basket"></use>
+              </svg>
+              <span class="visually-hidden">Кабинет</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="card">
+        <div class="card__wrapper">
+          <h1 class="visually-hidden">Карточка товара</h1>
+          <form class="card__form" action="#">
+            <div class="card__img-wrapper">
+              <picture>
+                <source media="(max-width: 1365px)" srcset="img/card-image-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="img/card-image-mobile.jpg">
+                <img class="card__img" src="img/card-image.jpg" width="630" height="647" alt="Крем">
+              </picture>
+            </div>
+            <div class="card__info-wrapper">
+              <h2 class="card__title">Rose</h2>
+              <span class="card__type">крем для лица</span>
+              <p class="card__description">
+                Увлажняющий крем идеально подходит для повседневного ухода
+                за молодой кожей.
+              </p>
+              <p class="card__description card__description--last">
+                Крем равномерно распределяется
+                по поверхности благодаря легкой текстуре, обеспечивает
+                глубокое увлажнение, регенерацию клеток.
+              </p>
+              <div class="card__details">
+                <div class="card__details-wrapper">
+                  <h3 class="card__subtitle card__subtitle--closed">Состав</h3>
+                  <p class="card__details-info card__details-info">
+                    Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch,
+                    Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene
+                    Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
+                  </p>
+                </div>
+
+                <div class="card__details-wrapper">
+                  <h3 class="card__subtitle card__subtitle--closed">Способ применения</h3>
+                  <p class="card__details-info card__details-info">
+                    Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями,
+                    избегая области вокруг глаз. Подходит для дневногои ночного ухода.
+                  </p>
+                </div>
+              </div>
+
+              <fieldset class="card__volume">
+                <legend class="visually-hidden">Объем</legend>
+                <h3 class="card__subtitle card__subtitle--volume">Объем:</h3>
+                <ul class="card__filter-list">
+                  <li class="card__filter-item">
+                    <label class="card__filter-control">
+                      <input class="card__filter-input visually-hidden" name="volume" type="radio" value="50ml" checked>
+                      <span class="card__filter-mark"></span>
+                      <span class="card__filter-label">50ml</span>
+                    </label>
+                  </li>
+
+                  <li class="card__filter-item">
+                    <label class="card__filter-control">
+                      <input class="card__filter-input visually-hidden" name="volume" type="radio" value="30ml" checked>
+                      <span class="card__filter-mark"></span>
+                      <span class="card__filter-label">30ml</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="card__filter-wrapper">
+                <span class="card__filter-price">890 &#8381;</span>
+                <button class="card__filter-submit-button button" type="submit">Добавить в корзину</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="recent-products">
+        <div class="recent-products__wrapper">
+          <h2 class="recent-products__title">Вы недавно смотрели</h2>
+          <div class="recent-products__slider slider">
+            <ul class="recent-products__list products-list">
+              <li class="products-list__item">
+                <a class="products-list__link" href="#">
+                  <picture>
+                    <source media="(max-width: 1365px)" srcset="img/catalog/Clean_tablet.jpg">
+                    <source media="(max-width: 767px)" srcset="img/catalog/Clean_mobile.jpg">
+                    <img class="products-list__img" src="img/catalog/Clean_desktop.jpg" width="270" height="350" alt="Крем для лица high">
+                  </picture>
+                  <div class ="products-list__text">
+                    <h3 class="products-list__title">Clean</h3>
+                    <span class="products-list__price">490 &#8381;</span>
+                    <span class="products-list__type">маска для лица</span>
+                    <span class="products-list__volume">100g</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="products-list__item">
+                <a class="products-list__link" href="#">
+                  <picture>
+                    <source media="(max-width: 1365px)" srcset="img/catalog/Lotos_tablet.jpg">
+                    <source media="(max-width: 767px)" srcset="img/catalog/Lotos_mobile.jpg">
+                    <img class="products-list__img" src="img/catalog/Lotos_desktop.jpg" width="270" height="350" alt="Крем для лица high">
+                  </picture>
+                  <div class ="products-list__text">
+                    <h3 class="products-list__title">Lotos</h3>
+                    <span class="products-list__price">890 &#8381;</span>
+                    <span class="products-list__type">маска для лица</span>
+                    <span class="products-list__volume">50ml</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="products-list__item">
+                <a class="products-list__link" href="#">
+                  <picture>
+                    <source media="(max-width: 1365px)" srcset="img/catalog/Lavender_tablet.jpg">
+                    <source media="(max-width: 767px)" srcset="img/catalog/Lavender_mobile.jpg">
+                    <img class="products-list__img" src="img/catalog/Lavender_desktop.jpg" width="270" height="350" alt="Крем для лица high">
+                  </picture>
+                  <div class ="products-list__text">
+                    <h3 class="products-list__title">Lavender</h3>
+                    <span class="products-list__price">290 &#8381;</span>
+                    <span class="products-list__type">мыло ручной работы</span>
+                    <span class="products-list__volume">50g</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="products-list__item">
+                <a class="products-list__link" href="#">
+                  <picture>
+                    <source media="(max-width: 1365px)" srcset="img/catalog/Coconut_tablet.jpg">
+                    <source media="(max-width: 767px)" srcset="img/catalog/Coconut_mobile.jpg">
+                    <img class="products-list__img" src="img/catalog/Coconut_desktop.jpg" width="270" height="350" alt="Крем для лица high">
+                  </picture>
+                  <div class ="products-list__text">
+                    <h3 class="products-list__title">Coconut</h3>
+                    <span class="products-list__price">990 &#8381;</span>
+                    <span class="products-list__type">масло для тела</span>
+                    <span class="products-list__volume">300ml</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="catalog__nav-container">
+              <div class="catalog__pagination pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">1</a>
+                  </li>
+                  <li class="pagination__item pagination__item--more">
+                    <a class="pagination__link pagination__link--more"><span class="visually-hidden">...</span></a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog__buttons-wrapper">
+                <button class="catalog__button catalog__button--prev" type="button">
+                  <svg class="slider__arrow-icon" width="26" height="12">
+                    <use href="img/sprite.svg#slider-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="catalog__button catalog__button--next" type="button">
+                  <svg class="slider__arrow-icon" width="26" height="12">
+                    <use href="img/sprite.svg#slider-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__nav">
+          <a class="footer__logo logo" href="#">
+            <svg class="logo__image" width="131" height="21">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__site-list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Каталог</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Магазины</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon" width="11" height="18">
+                <use href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon" width="20" height="20">
+                <use href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <svg class="social-list__icon" width="20" height="17">
+                <use href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__privacy-wrapper">
+        <div class="footer__privacy-inner-wrapper">
+          <p class="footer__copyright">
+            Maroon &#169; 2020 Все права защищены
+          </p>
+          <p class="footer__copyright">
+            Политика конфиденциальности
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/card-toggle.js"></script>
+  </body>
+</html>
