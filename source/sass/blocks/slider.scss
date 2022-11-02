@@ -3,6 +3,11 @@
 .slider {
   position: relative;
   padding-bottom: 37px;
+
+  @media (max-width: $mobile-width) {
+    width: 220px;
+    margin: 0 auto;
+  }
 }
 
 .slider__wrapper {
@@ -14,6 +19,11 @@
 
   @media (max-width: $tablet-width) {
     width: 480px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 220px;
+    margin: 0;
   }
 }
 
@@ -109,7 +119,10 @@
   }
 
   @media (max-width: $mobile-width) {
-    display: none;
+    position: static;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
   }
 }
 
@@ -124,5 +137,15 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #b3bac1;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }

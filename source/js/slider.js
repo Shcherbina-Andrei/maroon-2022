@@ -1,16 +1,23 @@
 const sliderPrevButtonElement = document.querySelector('.slider__button--prev');
 const sliderNextButtonElement = document.querySelector('.slider__button--next');
-const sliderListELement = document.querySelector('.slider__list');
-const sliderWrapperElement = document.querySelector('.slider__wrapper');
-console.log('Hello from slider');
+let sliderListELement = document.querySelector('.slider__list');
+let sliderWrapperElement = document.querySelector('.slider__wrapper');
 let transformValue = 0;
-const sliderStep = 100;
-const sliderWidth = sliderListELement.clientWidth;
-const sliderWrapperWidth = sliderWrapperElement.clientWidth;
-const sliderPathValue = sliderWidth - sliderWrapperWidth;
+let sliderStep = document.documentElement.clientWidth < 768 ? 260 : 100;
+let sliderWidth = sliderListELement.clientWidth;
+let sliderWrapperWidth = sliderWrapperElement.clientWidth;
+let sliderPathValue = sliderWidth - sliderWrapperWidth;
 
-console.log(sliderWidth);
-
+window.addEventListener('resize', () => {
+  sliderStep = document.documentElement.clientWidth < 768 ? 260 : 100;
+  sliderListELement = document.querySelector('.slider__list');
+  sliderWrapperElement = document.querySelector('.slider__wrapper');
+  sliderWidth = sliderListELement.clientWidth;
+  sliderWrapperWidth = sliderWrapperElement.clientWidth;
+  transformValue = 0;
+  sliderListELement.style.transform = `translateX(${transformValue}px)`;
+  sliderPathValue = sliderWidth - sliderWrapperWidth;
+})
 
 sliderNextButtonElement.addEventListener('click', (evt) => {
   evt.preventDefault();
@@ -18,7 +25,6 @@ sliderNextButtonElement.addEventListener('click', (evt) => {
     transformValue = transformValue - sliderStep;
     sliderListELement.style.transform = `translateX(${transformValue}px)`;
   }
-  console.log(transformValue);
 });
 
 sliderPrevButtonElement.addEventListener('click', (evt) => {
@@ -27,5 +33,4 @@ sliderPrevButtonElement.addEventListener('click', (evt) => {
     transformValue = transformValue + sliderStep;
     sliderListELement.style.transform = `translateX(${transformValue}px)`;
   }
-  console.log(transformValue);
 });
