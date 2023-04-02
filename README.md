@@ -1,5 +1,8 @@
-Реализована адаптивная верстка сайта интернет-магазина Maroon. 
+# Проект «Maroon»
+Реализована адаптивная верстка сайта интернет-магазина косметики. 
 В проекте присутствуют три страницы: главная, каталог, картока товара Rose.
-В данной работе применены следующие технологии: HTML, CSS, JavaScript, Sass, Gulp.
-GH-pages: https://shcherbina-andrei.github.io/maroon-2022/index.html
+
+**Стек технологий:** HTML, CSS, JavaScript, Sass, Gulp.
+
+**Ознакомьтесь с deploy-версией:** https://shcherbina-andrei.github.io/maroon-2022/index.html
 
